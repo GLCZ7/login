@@ -3,23 +3,23 @@ html{
 }
 body{
     font-family: 'Roboto',sans-serif;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    background-image: url(../img/bg.jpg);
-    background-repeat: no-repeat;
+    background: url(../img/bg.jpg) no-repeat;
+    /* background-color: #28334e; */
     background-size: cover;
     background-position: center;
+    overflow: hidden;
+    padding: 20px;
 }
 
 .container{
     width: 350px;
-    padding: 40px;
+    padding: 30px;
     border-radius: 15px;
     border: 2px solid rgb(255,255,255,.2);
     background-color: #ffffff05;
@@ -100,4 +100,10 @@ body{
 }
 .reg-link a:hover{
     text-decoration: underline;
+}
+
+@media (max-width:555px) {
+   .container{
+    width: auto;
+   } 
 }
